@@ -1,0 +1,274 @@
+@import "var";
+@import "breakpoint";
+
+#appMSP {
+  font: 400 normal normal 16px/normal Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+	width: 100%;
+	color: var(--color-basis);
+	position: relative;
+	box-sizing: border-box;
+	.center,
+	.center-lowest::before,
+	.center-higher::after {
+		top: 50%;
+		right: 50%;
+		position: absolute;
+		transform: translate(50%, -50%);
+	}
+	.center-lowest::before,
+	.anchor-lowest::before,
+	.center-higher::after,
+	.anchor-higher::after {
+		content: '';
+	}
+	.ellips {
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	input,
+	button,
+	select,
+	textarea {
+		outline: none;
+	}
+	ul {
+		list-style-type: none;
+	}
+	form {
+		&.hidden,
+		&.hidden > input[name] {
+			display: none;
+		}
+	}
+	*,
+	::before,
+	::after {
+		box-sizing: inherit;
+	}
+	--color-basis: rgba(37, 37, 37, .87);
+	--color-misty: rgba(0, 0, 0, .43);
+	--color-faint: rgba(0, 0, 0, .17);
+}
+
+body
+{
+	margin: 0;
+}
+
+html {
+	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
+	-ms-touch-action: none;
+	-ms-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+}
+
+// ------------- link -------------
+a {
+	color: $primary;
+	text-decoration: none;
+	background-color: transparent;
+	&:hover {
+		color: $primaryHover;
+		text-decoration: underline;
+	}
+}
+.link {
+	padding: 0.25rem 1.25rem;
+	background: none;
+	border: none;
+	-moz-transition: color 0.15s ease-in-out;
+	-o-transition: color 0.15s ease-in-out;
+	-webkit-transition: color 0.15s ease-in-out;
+	transition: color 0.15s ease-in-out;
+}
+
+.link-primary {
+	color: $primary;
+
+	&:hover,
+	&:focus {
+		color: $primaryHover;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+
+// ------- border -------
+.border {
+	border: 1px solid $border !important;
+}
+
+.border-top {
+	border-top: 1px solid $border !important;
+}
+
+.border-right {
+	border-right: 1px solid $border !important;
+}
+
+.border-bottom {
+	border-bottom: 1px solid $border !important;
+}
+
+.border-left {
+	border-left: 1px solid $border !important;
+}
+
+// ----- text-utilities ------
+.text-left {
+	text-align: left !important;
+}
+
+.text-right {
+	text-align: right !important;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+@media (min-width: 576px) {
+	.text-sm-left {
+		text-align: left !important;
+	}
+	.text-sm-right {
+		text-align: right !important;
+	}
+	.text-sm-center {
+		text-align: center !important;
+	}
+}
+
+@media (min-width: 768px) {
+	.text-md-left {
+		text-align: left !important;
+	}
+	.text-md-right {
+		text-align: right !important;
+	}
+	.text-md-center {
+		text-align: center !important;
+	}
+}
+
+@media (min-width: 992px) {
+	.text-lg-left {
+		text-align: left !important;
+	}
+	.text-lg-right {
+		text-align: right !important;
+	}
+	.text-lg-center {
+		text-align: center !important;
+	}
+}
+
+@media (min-width: 1200px) {
+	.text-xl-left {
+		text-align: left !important;
+	}
+	.text-xl-right {
+		text-align: right !important;
+	}
+	.text-xl-center {
+		text-align: center !important;
+	}
+}
+
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.font-12 {
+	font-size: 12px !important;
+}
+
+.font-bold {
+  font-weight: 500;
+}
+
+// ----------- background utils ------------
+.bd-highlight {
+	background-color: rgba(223, 230, 233, 0.50);
+}
+
+// ----------- content utils --------------
+// .content {
+// 	@include device-breakpoint($XS-DEVICE) {
+// 		padding-top: 66px;
+// 	}
+// 	@include device-breakpoint($SM-DEVICE) {
+// 		padding-top: 66px;
+// 	}
+// 	@include breakpoint($SM) {
+// 		padding-top: 100px;
+// 	}
+// }
+
+// ----------- visibility utils -----------
+// .hide-xs {
+// 	@include device-breakpoint($XS-DEVICE) {
+// 		display: none;
+// 	}
+// }
+
+// .hide-sm {
+// 	@include device-breakpoint($SM-DEVICE) {
+// 		display: none;
+// 	}
+// }
+
+// .hide-md {
+// 	@include device-breakpoint($MD-DEVICE) {
+// 		display: none;
+// 	}
+// }
+
+// ----------- transition utils ------------
+.fade-enter-active,
+.fade-leave-active {
+	transition-property: opacity;
+	transition-timing-function: ease-in-out;
+	transition-duration: 500ms;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+//------------ shadow -------------
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+//----------- rounded -------------
+.rounded {
+  border-radius: 0.25rem !important;
+}
+
+
+.elevation-1 {
+	box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+.elevation-2 {
+	box-shadow: 0 3px 3px -2px rgba(0, 0, 0, .2), 0 3px 4px 0 rgba(0, 0, 0, .14), 0 1px 8px 0 rgba(0, 0, 0, .12);
+}
+.elevation-3 {
+	box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 5px 8px 0 rgba(0, 0, 0, .14), 0 1px 14px 0 rgba(0, 0, 0, .12);
+}
+.elevation-4 {
+	box-shadow: 0 4px 5px -2px rgba(0, 0, 0, .2), 0 7px 10px 1px rgba(0, 0, 0, .14), 0 2px 16px 1px rgba(0, 0, 0, .12);
+}
