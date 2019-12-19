@@ -1,6 +1,6 @@
 <template>
   <div @click="$emit('switchTab')" class="tab-header col border-bottom text-center text-capitalize">
-    {{ pbob.name }}
+    <span class="font-bold">{{ pbob.name }}</span>
   </div>
 </template>
 
@@ -22,6 +22,7 @@ export default {
 .tab-header {
   cursor: pointer;
   padding: 0.5rem 0.25rem;
+  border-bottom: solid 3px $border !important;
   &.active {
     color: $primary !important;
     border-bottom-color: $primary !important;
