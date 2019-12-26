@@ -5,7 +5,7 @@
     <div>
       <tree :options="treeOpts" ref="tree" />
     </div>
-    <div><button type="button" @click="getDataChecked()">console</button></div>
+    <div><button type="button" class="btn btn-primary" @click="getDataChecked()">console</button></div>
   </div>
 </template>
 
