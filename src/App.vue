@@ -1,20 +1,31 @@
 <template>
   <div id="app">
-    <div id="nav" class="text-center">
+    <menu-desktop />
+    <!-- <div id="nav-simple" class="text-center">
       <router-link to="/">Home</router-link> |
       <router-link to="/tabs">Tabs</router-link> |
       <router-link to="/tree">Tree</router-link>
-    </div>
+    </div> -->
     <router-view/>
   </div>
 </template>
+
+<script>
+import MenuDesktop from './components/navigation/desktop/'
+
+export default {
+  components: {
+    MenuDesktop
+  }
+}
+</script>
 
 <style lang="scss">
 @import './assets/styles/global.scss';
 @import './assets/styles/control.scss';
 @import './assets/styles/layout.scss';
 
-#nav {
+#nav-simple {
   padding: 30px;
 
   a {

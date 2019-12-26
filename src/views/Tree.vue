@@ -1,6 +1,6 @@
 <template>
   <div class="home container">
-    <h1 class="text-center">This is an Tree(liquor-tree) Components</h1>
+    <h1 class="text-center border-bottom">This is an Tree(liquor-tree) Components</h1>
     <div>{{ getStatus ? getStatus : 'No Data' }}</div>
     <div>
       <tree :options="treeOpts" ref="tree" />
