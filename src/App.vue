@@ -2,7 +2,8 @@
   <div id="app">
     <div id="nav" class="text-center">
       <router-link to="/">Home</router-link> |
-      <router-link to="/components">Components</router-link>
+      <router-link to="/tabs">Tabs</router-link> |
+      <router-link to="/tree">Tree</router-link>
     </div>
     <router-view/>
   </div>
@@ -20,6 +21,7 @@
     font-weight: bold;
     color: #2c3e50;
 
+    /*class include vue */
     &.router-link-exact-active {
       color: #42b983;
     }

@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1 class="text-center">This is an components page</h1>
+    <h1 class="text-center">This is an Tab Components</h1>
     <hr>
     <!-- tabs component -->
     <div class="container">
