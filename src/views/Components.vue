@@ -4,17 +4,17 @@
     <hr>
     <!-- tabs component -->
     <div class="container">
-      <PBOB></PBOB>
+      <PBOBTabs></PBOBTabs>
     </div>
   </div>
 </template>
 
 <script>
-import PBOB from '@/components/PBOB/Index'
+import PBOBTabs from '@/components/PBOBTabs/Index'
 
 export default {
   components: {
-    PBOB
+    PBOBTabs
   }
 }
 </script>

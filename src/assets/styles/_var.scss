@@ -1,31 +1,15 @@
-$default: #212529;
-$defaultHover: rgba(0, 123, 255, 0.25);
+$primary: #007bff;
+$primaryShadow: (0, 123, 255, 0.8);
+$primaryHover: #0056b3;
 
-//$primary: #007bff;
-//$primaryHover: #ff32ab;
-$primaryShadow: rgba(255, 50, 171, 0.5);
-$primaryDisabled: rgba(38, 143, 255, 0.5);
+/* button */
+$buttonPrimaryHover: #0056b3;
+$buttonPrimaryDisabled: rgba(38, 143, 255, 0.5);
+$buttonDefaultHover:#212529;
+$buttonDefaultFocus: rgba(0, 123, 255, 0.25);
 
-// Color Palette
-$pageBackground: #fcfcfc;
-$contentBackground: #fff;
+/* utils */
+$textDefault: #212529;
+$borderDefault: #dee2e6;
 
-$primary: #ffc131;
-$primaryDark: #ffa100;
-$primaryHover: #ff8600;
 
-$headerLink: #787878;
-$fontDark: #393939;
-$fontPlaceholder: #adadad;
-$border: #eaeaea;
-
-$shadow8: rgba(0, 0, 0, .08);
-$shadow16: rgba(0, 0, 0, .16);
-
-$media-xs-max: 575.98px;
-
-$media-sm-min: 576px;
-$media-sm-max: 767.98px;
-
-$media-md-min: 768px;
-$media-md-max: 991.98px;

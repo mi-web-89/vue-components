@@ -21,7 +21,7 @@
 import PBOBHeader from "./PBOBHeader";
 import Pulsa from "./Pulsa";
 import Listrik from "./Listrik";
-import SkeletonBox from "../SkeletonBox";
+import SkeletonBox from "@/components/ui/SkeletonBox";
 
 export default {
   components: {
@@ -35,27 +35,22 @@ export default {
       tabs: [
         {
           name: "pulsa",
-          type: "prepaid",
           mode: "Pulsa"
         },
         {
           name: "internet",
-          type: "prepaid",
           mode: "Pulsa"
         },
         {
           name: "listrik",
-          type: "prepaid",
-          mode: "Listrik"
+          mode: "listrik"
         },
         {
           name: "telepon",
-          type: "postpaid",
           mode: "Pulsa"
         },
         {
           name: "BPJS",
-          type: "prepaid",
           mode: "Pulsa"
         }
       ],
@@ -69,15 +64,18 @@ export default {
       this.currentTab = tab.name;
       this.currentMode = tab.mode;
     }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.isLoading = !this.isLoading
+    }, 3000)
   }
 };
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/styles/var.scss";
-
 #tabs {
-  background: $contentBackground;
+  background: #fff;
   margin: 2rem 0;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;

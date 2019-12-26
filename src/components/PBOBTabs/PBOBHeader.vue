@@ -22,7 +22,7 @@ export default {
 .tab-header {
   cursor: pointer;
   padding: 0.5rem 0.25rem;
-  border-bottom: solid 3px $border !important;
+  border-bottom: solid 3px $borderDefault !important;
   &.active {
     color: $primary !important;
     border-bottom-color: $primary !important;

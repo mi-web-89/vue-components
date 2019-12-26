@@ -26,7 +26,7 @@
       </select>
     </div>
     <div class="flex-fill text-right pt-4">
-      <button type="button" class="btn btn-primary btn-block">
+      <button type="button" class="btn btn-block btn-primary">
         Beli Sekarang
       </button>
     </div>
