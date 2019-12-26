@@ -1,4 +1,4 @@
-# carousel
+# library vue components
 
 ## Project setup
 ```
