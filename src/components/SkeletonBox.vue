@@ -48,29 +48,20 @@ export default {
 .SkeletonBox {
   display: inline-block;
   vertical-align: middle;
-  background-color: #dddbdd;
-  &::after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: translateX(-100%);
-    background-image: linear-gradient(
-      90deg,
-      rgba(#fff, 0) 0,
-      rgba(#fff, 0.2) 20%,
-      rgba(#fff, 0.5) 60%,
-      rgba(#fff, 0)
-    );
-    animation: shimmer 5s infinite;
-    content: "";
-  }
+  background: linear-gradient(-45deg, rgba(242, 242, 240, 1.0), rgba(227, 230, 232, 1.0));
+  background-size: 400% 400%;
+  animation: gradientBG 3.5s ease infinite;
+}
 
-  @keyframes shimmer {
-    100% {
-      transform: translateX(100%);
-    }
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 </style>
