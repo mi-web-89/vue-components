@@ -41,7 +41,7 @@ export default {
 <style lang="scss" scoped>
 $text-navbar: rgba(255, 255, 255, 0.8);
 $border-bottom: rgba(255, 255, 255, 0.3);
-$nav-background: #343a40;
+$nav-background: #3498db;
 $nav-collapse-background: #2d3436;
 $primary: #007bff;
 $primary-hover: #0056b3;
