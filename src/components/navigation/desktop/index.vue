@@ -20,6 +20,9 @@
           <router-link to="/tree" class="nav-link">Tree</router-link>
         </li>
         <li class="nav-item">
+          <router-link to="/zoomer" class="nav-link">Zoomer</router-link>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#">Disabled</a>
         </li>
       </ul>

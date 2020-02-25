@@ -22,6 +22,11 @@ const routes = [
     path: '/tree',
     name: 'tree',
     component: () => import('../views/Tree.vue')
+  },
+  {
+    path: '/zoomer',
+    name: 'zoomer',
+    component: () => import('../views/Zoomer.vue')
   }
 ]
 

@@ -32,7 +32,6 @@ export default {
   components: {
     MenuDesktop,
     MenuMobile,
-    // MenuResponsive,
     SideMenu,
     Overlay
   },
@@ -53,18 +52,4 @@ export default {
 @import './assets/styles/global.scss';
 @import './assets/styles/control.scss';
 @import './assets/styles/layout.scss';
-
-// #nav-simple {
-//   padding: 30px;
-
-//   a {
-//     font-weight: bold;
-//     color: #2c3e50;
-
-//     /*class include vue */
-//     &.router-link-exact-active {
-//       color: #42b983;
-//     }
-//   }
-// }
 </style>

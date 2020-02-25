@@ -1,6 +1,6 @@
 <template>
-  <div @click="$emit('switchTab')" class="tab-header col border-bottom text-center text-capitalize">
-    <span class="font-bold">{{ pbob.name }}</span>
+  <div @click="$emit('switchTab', list)" class="tab-header col border-bottom text-center text-capitalize">
+    <span class="font-bold">{{ list.name }}</span>
   </div>
 </template>
 
@@ -8,7 +8,7 @@
 export default {
   name: 'TabHeader',
   props: {
-    pbob: {
+    list: {
       type: Object,
       required: true
     }
@@ -17,7 +17,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../../assets/styles/var.scss";
+@import "../../../assets/styles/var.scss";
 
 .tab-header {
   cursor: pointer;
