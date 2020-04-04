@@ -23,6 +23,9 @@
           <router-link to="/zoomer" class="nav-link">Zoomer</router-link>
         </li>
         <li class="nav-item">
+          <router-link to="/carousel" class="nav-link">Carousel</router-link>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="#">Disabled</a>
         </li>
       </ul>

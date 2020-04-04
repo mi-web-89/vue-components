@@ -27,6 +27,11 @@ const routes = [
     path: '/zoomer',
     name: 'zoomer',
     component: () => import('../views/Zoomer.vue')
+  },
+  {
+    path: '/carousel',
+    name: 'carousel',
+    component: () => import('../views/Carousel.vue')
   }
 ]
 
